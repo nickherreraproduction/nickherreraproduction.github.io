@@ -1,0 +1,605 @@
+/*
+ * Colours
+ * Contasts calculated with: http://leaverou.github.io/contrast-ratio
+ * to ensure accessibility is good.
+ *
+ * gray: #444444 - contrast 7 (AAA);
+ * dark gray: #000000 - contrast 12.6 (AAA);
+ * green: #226dbf - contrast 3.1 (AA);
+*/
+
+/**
+ * Base elements
+ */
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dl,
+blockquote,p,address,
+table,
+fieldset,figure,
+pre {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+html{
+  font: .875em/1.8em "Roboto","Helvetica Neue", Helvetica, Arial,serif;
+  font-weight: 300;
+  overflow-y:scroll;
+  min-height:100%;
+  color: #444444;
+  -webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: #444444;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+/**
+ * A more considered reset; more of a restart...
+ * As per: csswizardry.com/2011/10/reset-restarted
+ */
+article,aside,details,figcaption,figure,footer,
+header,hgroup,main,menu,nav,section{
+  display:block;
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+strong,b,mark{
+  font-weight:600;
+  font-style:inherit;
+}
+em,i,cite,q,address,dfn,var{
+  font-style:italic;
+  font-weight:inherit;
+}
+abbr[title],dfn[title]{
+  cursor:help;
+  border-bottom:1px dotted;
+}
+ins{
+  border-bottom:1px solid;
+}
+a,u,ins{
+  text-decoration:none;
+}
+del,s{
+  text-decoration:line-through;
+}
+img{
+  border:none;
+  font-style:italic;
+}
+
+/**
+ * Normalize `sup` and `sub` elements.
+ */
+sub,
+sup{
+  font-size:75%;
+  line-height:0;
+  position:relative;
+  vertical-align:baseline;
+}
+  sup{
+    top:-0.5em;
+  }
+  sub{
+    bottom:-0.25em;
+  }
+
+/**
+ * Set the colour for highlighted text
+ */
+::selection {
+  background-color: #226dbf;
+  color: #ffffff;
+}
+::moz-selection {
+  background-color: #226dbf;
+  color: #ffffff;
+}
+
+/*------------------------------------*\
+    quotes
+\*------------------------------------*/
+/**
+ * Big up @boblet: html5doctor.com/blockquote-q-cite
+ */
+q{ quotes:"“" "" "“" ""; }
+  q:before{ content:"“"; content:open-quote; }
+  /* q:after{ content:"”"; content:close-quote; } */
+  q q:before{ content: "“"; content: open-quote; }
+  /* q q:after{ content: "”"; content: close-quote; } */
+
+
+/**
+ *
+   <blockquote>
+       is being hijacked! don't style it
+ *
+ */
+blockquote {
+  margin: 0 0 1em;
+}
+/*------------------------------------*\
+    code
+\*------------------------------------*/
+pre,code,samp,kbd{
+  font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;;
+}
+pre {
+  overflow: auto;
+}
+  pre,
+  pre code {
+    background-color: #000000;
+    color: #cccccc;
+  }
+  pre mark {
+    border-bottom: 2px solid;
+    background: none;
+    color: #ffffff;
+  }
+.code-comment {
+  color: #999999;
+}
+code,
+samp,
+kbd {
+  color: #444444;
+}
+
+/*------------------------------------*\
+    headings
+\*------------------------------------*/
+/**
+ * When we define a heading we also define a corresponding class to go with it.
+ * This allows us to apply, say, `class=h3` to a `h3`; a double-stranded
+ * heading hierarchy.
+ *
+ * Ratio calculated with: http://www.pearsonified.com/typography/
+ * For optimal legibility.
+ */
+h1,.h1,h2,.h2,h3,.h3,
+h4,.h4,h5,.h5,h6,.h6 {
+  text-rendering: optimizelegibility;
+  font-weight:300;
+  color: #000000;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+h1,.h1{
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.3em;
+  margin-top: 0;
+}
+h2,.h2{
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5em;
+}
+h3,.h3{
+  font-size: 1rem; /* 16px */
+  line-height: 1.5em;
+}
+h4,.h4{
+  font-size: 1em;  /* 14px */
+  font-size: 1rem;
+  line-height: 1em;
+  font-weight: 600;
+}
+h5,.h5{
+  font-size: 0.875em; /* 14px */
+  font-size: 0.875rem;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+h6,.h6{
+  font-size: 0.875em;     /* 14px */
+  font-size: 0.875rem;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+h1 small,
+h2 small {
+  font-weight: normal;
+  color: #ffffff;
+}
+
+p,
+article > footer {
+  margin-bottom: 26px;
+}
+/*------------------------------------*\
+    links
+\*------------------------------------*/
+/**
+ * Sometimes, particularly on larger projects, it is useful to scope link
+ * styling only to anchors which have `href` attributes.
+ */
+a{
+  color: #226dbf;
+  -webkit-transition:color .2s linear, background .2s linear, border .2s linear;
+	-moz-transition:color .2s linear, background .2s linear, border .2s linear;
+	transition:color .2s linear, background .2s linear, border .2s linear;
+}
+  a:hover,
+  a:active,
+  a:focus{
+    text-decoration:none;
+    color: #000000;
+  }
+  a:active,
+  a:focus{
+    outline:none;
+    /*position: relative;
+    top: 1px;*/
+  }
+/*------------------------------------*\
+    lists
+\*------------------------------------*/
+ul,
+ol {
+  margin-bottom: 26px;
+  padding-left: 26px;
+}
+/**
+ * Remove vertical spacing from nested lists.
+ */
+li{
+  line-height:26px;
+}
+  li  > ul,
+  li  > ol{
+    margin-bottom:0;
+  }
+
+/*------------------------------------*\
+    images
+\*------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure > img {
+  display: block;
+}
+figure figcaption {
+  display: block;
+  font-weight: normal;
+  color: #999999;
+}
+/*------------------------------------*\
+   helper
+\*------------------------------------*/
+/**
+ * Hide content off-screen without resorting to `display:none;`
+ */
+.h {
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+}
+[dir=rtl] .h {
+  left: auto;
+  right: -99999px;
+  top: -99999px;
+}
+/**
+ * Easy method for hiding or showing elements on small devices
+ * .d = only on desktop
+ * .m = only on small screens
+ */
+.d {
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+}
+@media (min-width: 481px) {
+  .m {
+    position: absolute;
+    left: -99999px;
+    top: -99999px;
+  }
+  .d {
+    position: static;
+  }
+}
+/**
+ * Easy method for hiding or showing elements on print screens
+ * .p = only on print
+ * .np = only on screen
+ */
+.p {
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+}
+@media print {
+  .np {
+    position: absolute;
+    left: -99999px;
+    top: -99999px;
+  }
+  .p {
+    position: static;
+  }
+}
+/**
+ * No margin.
+ */
+.nm {
+  margin: 0;
+}
+/*------------------------------------*\
+    layout
+\*------------------------------------*/
+section {
+  margin: 0 auto;
+  padding: 0 2em;
+}
+@media (min-width: 720px) {
+  section {
+    padding: 0;
+  }
+}
+
+/*-- Intro text --*/
+.intro {
+  text-align: center;
+  padding: 3em 1em 4em;
+  max-width: none;
+  background-image: url(../assets/css_bg.jpg);
+  color: #ffffff;
+  background-color: #000000;
+}
+.intro__inner {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.intro__logo {
+  text-indent: -9990em;
+  display: block;
+  width: 270px;
+  height: 47px;
+  margin: 0 auto 2em;
+  background: url(../assets/css_logo--small.png) no-repeat scroll 0 0;
+}
+@media (min-width: 720px) {
+  .intro__logo {
+    width: 539px;
+    height: 93px;
+    margin: 0 auto 5%;
+    background: url(../assets/css_logo--large.png) no-repeat scroll 0 0;
+  }
+}
+.intro__title,
+.intro__summary,
+.intro__nav {
+  max-width: 880px;
+  margin: 0 auto 30px;
+  color: #ffffff;
+}
+.intro__title {
+  font-size: 1.5rem;
+}
+@media (min-width: 719px) {
+  .intro__title {
+    font-size: 2rem;
+  }
+  .intro__summary {
+    font-size: 1.3rem;
+  }
+}
+.intro a {
+  color: #ffffff;
+}
+.intro a:hover {
+  color: #ffd102;
+}
+
+.gangster-wrapper {
+  background: #ffffff;
+}
+
+/*-- CV Biography and profile pic --*/
+.cv {
+  padding-bottom: 0px;
+}
+.cv--bio span,
+.intro__title span {
+  color: #b4e5ef;
+}
+@media (min-width: 720px) {
+  .cv--img,
+  .cv--bio {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
+    margin-bottom: 26px;
+    text-align: left;
+  }
+}
+.cv--bio svg {
+  fill: #e9c44d;
+  transition: fill 0.5s ease;
+  margin-right: 10px;
+}
+.cv--bio span.quote {
+  color: #e9c44d;
+  transition: fill 0.5s ease;
+  margin-right: 10px;
+  font-size: 1.125rem;
+}
+.cv--bio svg,
+.cv--bio span.quote {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cv--bio svg:hover,
+.cv--bio span.quote:hover {
+  color: #e97d4d;
+  fill: #e97d4d;
+}
+
+/*-- Contact and Social links --*/
+.contact {
+  margin-top: 32px;
+  position: relative;
+}
+.social {
+  margin-top: 32px;
+}
+.social svg {
+  height: 40px;
+  width:40px;
+  fill: #ffffff;
+  float: left;
+  margin-right: 10px;
+  transition: fill .5s ease;
+}
+.social svg:hover {
+  fill: #e97d4d;
+}
+.social a {
+  font-size: 1.75em;
+  color: #e9c44d;
+  display: inline-block;
+  margin-right: 10px;
+}
+.social a:hover {
+  color: #e97d4d;
+}
+
+/*-- CV soundcloud and youtube --*/
+.cv--soundcloud{
+  padding-right:3px;
+  padding-top: 30px;
+  box-sizing:border-box;
+}
+.cv--soundcloud iframe {
+  display: block;
+}
+.cv--videos iframe {
+  width: 99%;
+}
+@media (min-width: 720px) {
+  .cv--soundcloud,
+  .cv--videos {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
+    padding-top: 0;
+  }
+
+  .cv--videos iframe {
+    float: left;
+    margin: 0;
+    height: 224px;
+    width: 50%;
+  }
+}
+.cv--soundcloud h4,
+.cv--videos h4,
+.photos--grid h4 {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/*-- Photos --*/
+.photos {
+  padding-top: 0;
+}
+.photos--grid {
+  margin-top: 0px;
+  width: 100%;
+}
+.photos--grid img {
+  width: 99%;
+}
+@media (min-width: 720px) {
+  .photos--grid img {
+    width: 25%;
+    float: left;
+    margin:0 0 30px 0;
+    vertical-align: bottom;
+  }
+}
+
+/*-- Footer --*/
+footer {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 2em;
+  color: #999999;
+  font-size: 0.8125em; /* 13px */
+  font-size: 0.8125rem;
+  line-height: 1.625em;
+}
+/*------------------------------------*\
+   print
+\*------------------------------------*/
+@media print {
+  * {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+}
