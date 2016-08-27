@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +17,11 @@
   <meta name="description" content="Producer and Engineer for some of Melbourne’s finest and studios.">
 
   <!-- stylesheet -->
-  <link rel="stylesheet" href="{{ site.url }}/css/nickherrera.css">
-  <link href='//fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
-
-  <!-- javascript -->
   {% include javascript.html %}
+  <link rel="stylesheet" href="/css/nickherrera.css">
 
 </head>
-<body class="top">
+<body id="top">
   <header role="banner" class="h"><h1>Nick Herrera - Producer and Audio Engineer</h1></header>
   <section class="intro">
 
@@ -31,7 +31,7 @@
       <h2 class="intro__title">Over the last <span>10 years</span> I have been working as a <span>Producer</span> and <span>Engineer</span> for some of <span>Melbourne’s finest musicians</span> and have had the pleasure of using some of <span>Melbourne's finest studios</span> in the process.</h2>
 
       <div class="cv--img">
-        <img src="{{ site.url }}/assets/nickherrera.png" alt="Photo of Nick" />
+        <img src="/assets/nickherrera.png" alt="Photo of Nick" />
       </div>
 
       <div class="cv--bio">
@@ -130,20 +130,22 @@
     <section class="photos">
       <div class="photos--grid">
 
-        <img src="{{ site.url }}/assets/microphone.jpg" alt="OPR ribbon microphone and gretsch drumkit in the recording room" />
+        <img src="/assets/microphone.jpg" alt="OPR ribbon microphone and gretsch drumkit in the recording room" />
 
-        <img src="{{ site.url }}/assets/piano.jpg" alt="Howard upright piano in the recording room" />
+        <img src="/assets/piano.jpg" alt="Howard upright piano in the recording room" />
 
-        <img src="{{ site.url }}/assets/amps.jpg" alt="OPR ribbon microphone and guitars ampps in the recording room" />
+        <img src="/assets/amps.jpg" alt="OPR ribbon microphone and guitars ampps in the recording room" />
 
-        <img src="{{ site.url }}/assets/synths.jpg" alt="Synthesizers stacked in the recording room" />
+        <img src="/assets/synths.jpg" alt="Synthesizers stacked in the recording room" />
 
       </div>
     </section>
 
     <section class="contact">
       <div class="contact--form" id="quote-form">
-        <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQotZIbDIOB4RK2Sw4yqtisrG5T8Ga_0oWb8Sh0olssjUbiw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+       <div class="inner-form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfs6ogB70Ut6khVTtEJEj_M_lEEII8V2oCU0nb4bpGTMSEeTg/viewform?embedded=true" width="600" height="845" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+       </div>
       </div>
       <div class="contact--img">
         <img src="/assets/synths-bottom.jpg" alt="More synthesizers stacked in the recording room" />
@@ -151,7 +153,7 @@
     </section>
 
     <footer role="contentinfo">
-      <p>Design: <a href="http://www.marinsekesan.com" rel="me" target="_blank">Marin Sekesan</a> | &#169; Nick Herrera Production. All Rights Reserved.</p>
+      {% include footer.html %}
     </footer>
 
   </main>

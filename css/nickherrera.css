@@ -538,10 +538,45 @@ section {
   }
 }
 
+/*-- Contact form --*/
+.contact .contact--img {
+    z-index: 10;
+    position: relative;
+  }
+.contact .contact--form .inner-form {
+  width: 99%;
+  height: 771px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+@media (min-width: 720px) {
+  .contact .contact--form .inner-form {
+    width: 525px;
+    height: 769px;
+  }
+}
+.contact .contact--form .inner-form iframe {
+  position: absolute;
+  top: -122px;
+  left: -19px;
+  bottom: -100px;
+  height: 1175px;
+  width: 376px;
+}
+@media (min-width: 720px) {
+  .contact .contact--form .inner-form iframe {
+    top: -120px;
+    left: -29px;
+    height: 1040px;
+    width: 585px;
+  }
+}
+
 /*-- Footer --*/
 footer {
   margin: 0 auto;
-  max-width: 940px;
+  clear: both;
   padding: 2em;
   color: #999999;
   font-size: 0.8125em; /* 13px */
