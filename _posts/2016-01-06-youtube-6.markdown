@@ -1,4 +1,0 @@
----
-layout: youtube
-video_url: https://www.youtube.com/embed/GeO_XxTFgH8?list=PL04W1gacvm_uSZIo4VbtZJFqb8dzSo2On
----
