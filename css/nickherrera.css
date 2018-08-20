@@ -507,7 +507,7 @@ section {
   .cv--videos iframe {
     float: left;
     margin: 0;
-    height: 224px;
+    height: 336px;
     width: 50%;
   }
 }
