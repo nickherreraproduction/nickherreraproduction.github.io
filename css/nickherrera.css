@@ -359,9 +359,9 @@ section {
   text-align: center;
   padding: 3em 1em 4em;
   max-width: none;
-  background-image: url(../assets/css_bg.jpg);
-  color: #ffffff;
-  background-color: #000000;
+  /*background-image: url(../assets/css_bg.jpg);*/
+  color: #000;
+  background-color: #fff;
 }
 .intro__inner {
   max-width: 920px;
@@ -418,7 +418,7 @@ section {
 }
 .cv--bio span,
 .intro__title span {
-  color: #b4e5ef;
+  color: #5e0073;
 }
 @media (min-width: 720px) {
   .cv--img,
@@ -432,12 +432,12 @@ section {
   }
 }
 .cv--bio svg {
-  fill: #e9c44d;
+  fill: #000;
   transition: fill 0.5s ease;
   margin-right: 10px;
 }
 .cv--bio span.quote {
-  color: #e9c44d;
+  color: #000;
   transition: fill 0.5s ease;
   margin-right: 10px;
   font-size: 1.125rem;
@@ -464,7 +464,7 @@ section {
 .social svg {
   height: 40px;
   width:40px;
-  fill: #ffffff;
+  fill: #000;
   float: left;
   margin-right: 10px;
   transition: fill .5s ease;
