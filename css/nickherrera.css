@@ -507,8 +507,10 @@ section {
   .cv--videos iframe {
     float: left;
     margin: 0;
-    height: 336px;
+    height: 330px;
     width: 50%;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff;
   }
 }
 .cv--soundcloud h4,
