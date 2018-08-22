@@ -373,14 +373,14 @@ section {
   width: 270px;
   height: 47px;
   margin: 0 auto 2em;
-  background: url(../assets/css_logo--small.png) no-repeat scroll 0 0;
+  background: url(../assets/css_logo--small--black.png) no-repeat scroll 0 0;
 }
 @media (min-width: 720px) {
   .intro__logo {
     width: 539px;
     height: 93px;
     margin: 0 auto 5%;
-    background: url(../assets/css_logo--large.png) no-repeat scroll 0 0;
+    background: url(../assets/css_logo--large--black.png) no-repeat scroll 0 0;
   }
 }
 .intro__title,
@@ -418,7 +418,7 @@ section {
 }
 .cv--bio span,
 .intro__title span {
-  color: #5e0073;
+  color: #e64e00;
 }
 @media (min-width: 720px) {
   .cv--img,
