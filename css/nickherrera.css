@@ -418,7 +418,8 @@ section {
 }
 .cv--bio span,
 .intro__title span {
-  color: #bd6c00;
+  /*color: #bd6c00;*/
+  font-weight: normal;
 }
 @media (min-width: 720px) {
   .cv--img,
@@ -432,12 +433,12 @@ section {
   }
 }
 .cv--bio svg {
-  fill: #000;
+  fill: #0069b9;
   transition: fill 0.5s ease;
   margin-right: 10px;
 }
 .cv--bio span.quote {
-  color: #000;
+  color: #0069b9;
   transition: fill 0.5s ease;
   margin-right: 10px;
   font-size: 1.125rem;
