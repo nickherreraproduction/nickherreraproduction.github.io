@@ -360,6 +360,7 @@ section {
   padding: 3em 1em 4em;
   max-width: none;
   background-image: url(../assets/nick-small.jpg);
+  background-size: cover;
   color: #fff;
   margin-bottom: 10px;
 }
