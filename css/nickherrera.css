@@ -379,7 +379,7 @@ section {
 @media (min-width: 720px) {
   .intro__logo {
     width: 539px;
-    height: 93px;
+    height: 95px;
     margin: 0 auto 5%;
     background: url(../assets/css_logo--large--white--bold.png) no-repeat scroll 0 0;
   }
