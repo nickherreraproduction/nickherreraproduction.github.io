@@ -359,9 +359,9 @@ section {
   text-align: center;
   padding: 3em 1em 4em;
   max-width: none;
-  /*background-image: url(../assets/css_bg.jpg);*/
-  color: #000;
-  background-color: #fff;
+  background-image: url(../assets/nick-small.jpg);
+  color: #fff;
+  margin-bottom: 10px;
 }
 .intro__inner {
   max-width: 920px;
@@ -373,14 +373,14 @@ section {
   width: 270px;
   height: 47px;
   margin: 0 auto 2em;
-  background: url(../assets/css_logo--small--black.png) no-repeat scroll 0 0;
+  background: url(../assets/css_logo--small--white--bold.png) no-repeat scroll 0 0;
 }
 @media (min-width: 720px) {
   .intro__logo {
     width: 539px;
     height: 93px;
     margin: 0 auto 5%;
-    background: url(../assets/css_logo--large--black.png) no-repeat scroll 0 0;
+    background: url(../assets/css_logo--large--white--bold.png) no-repeat scroll 0 0;
   }
 }
 .intro__title,
@@ -388,7 +388,7 @@ section {
 .intro__nav {
   max-width: 880px;
   margin: 0 auto 30px;
-  color: #000;
+  color: #fff;
 }
 .intro__title {
   font-size: 1.5rem;
@@ -424,7 +424,7 @@ section {
 @media (min-width: 720px) {
   .cv--img,
   .cv--bio {
-    width: 50%;
+    width: 45%;
     display: inline-block;
     vertical-align: top;
     margin-right: -4px;
@@ -433,12 +433,12 @@ section {
   }
 }
 .cv--bio svg {
-  fill: #0069b9;
+  fill: #fff;
   transition: fill 0.5s ease;
   margin-right: 10px;
 }
 .cv--bio span.quote {
-  color: #0069b9;
+  color: #fff;
   transition: fill 0.5s ease;
   margin-right: 10px;
   font-size: 1.125rem;
@@ -450,8 +450,8 @@ section {
 }
 .cv--bio svg:hover,
 .cv--bio span.quote:hover {
-  color: #e97d4d;
-  fill: #e97d4d;
+  color: #0069b9;
+  fill: #0069b9;
 }
 
 /*-- Contact and Social links --*/
@@ -465,13 +465,13 @@ section {
 .social svg {
   height: 40px;
   width:40px;
-  fill: #000;
+  fill: #fff;
   float: left;
   margin-right: 10px;
   transition: fill .5s ease;
 }
 .social svg:hover {
-  fill: #e97d4d;
+  fill: #0069b9;
 }
 .social a {
   font-size: 1.75em;
