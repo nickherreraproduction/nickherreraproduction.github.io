@@ -1,4 +1,4 @@
 ---
 layout: youtube
-video_url: https://www.youtube.com/embed/o92ik2uFAsk
+video_url: https://www.youtube.com/embed/gnbuCi0VrDE
 ---
