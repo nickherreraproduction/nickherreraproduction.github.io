@@ -493,9 +493,9 @@ section {
 .cv--soundcloud iframe {
   display: block;
 }
-.cv--videos iframe {
+/*.cv--videos iframe {
   width: 99%;
-}
+}*/
 @media (min-width: 720px) {
   .cv--soundcloud,
   .cv--videos {
@@ -506,15 +506,30 @@ section {
     padding-top: 0;
   }
 
-  .cv--videos iframe {
+  /*.cv--videos iframe {
     float: left;
     margin: 0;
     height: 340px;
     width: 50%;
     border-left: 10px solid #fff;
     border-bottom: 10px solid #fff;
-  }
+  }*/
 }
+.resp-iframe {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+}
+
 .cv--soundcloud h4,
 .cv--videos h4,
 .photos--grid h4 {
